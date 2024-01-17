@@ -1,0 +1,75 @@
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #e7ecf4;
+}
+
+  .loginBox {
+    display: flex;
+    padding: 20px;
+    padding-bottom: 180px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #e7ecf4;
+}
+
+.loginBox form {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+  
+.loginBox input[type="text"] {
+    margin-bottom: 30px;
+    padding: 8px;
+    border-radius: 8px;
+    outline-color: #051d41;
+    background-color: #f7f8fa;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.icon {
+    height: 10vw;
+    width: 10vw;
+    padding: 2.5vw;
+  }
+
+.centeredImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 4px 4px rgba(71, 71, 71, 0.3);
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(71, 71, 71, 0.3));
+    background-color: #cedaeb; 
+    justify-items: center;
+    align-self: center;
+    padding: 23%;
+  }
+
+  .centeredImage img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+ 
+  .centeredImage:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+  }
+
+@media (max-width: 768px) {
+  
+  .centeredImage {
+      padding: 10%;
+    }
+
+}

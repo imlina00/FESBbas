@@ -1,0 +1,145 @@
+
+.container {
+    /* display: flex; */
+    /* height: 100vh; */
+    height: 100vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    /* padding-bottom: 30px; */
+    /* justify-content: space-between; */
+    /* align-items: flex-end; */
+    max-width: 100%;
+    background: #e7ecf4;
+  }
+
+  .loginBox {
+    max-width: 2200px; /* ili bilo koji drugi prikladan broj piksela koji odgovara vašim potrebama */
+    width: 100%;
+    text-align: left;
+    margin: auto; /* Centriranje po horizontali */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: flex-start; /* Centriranje po vertikali */
+}
+
+.rectangle {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #041733;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin-top: 23px;
+}
+
+.loginBox h2 {
+    font-size: 1.2vw;
+    text-align: left;
+    color: #051d41;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding-bottom: 5%;
+    align-self: flex-start;
+    padding-top: 5%;
+    /* margin-bottom: 10px; */
+    margin-right: 50%;
+}
+  
+.loginBox form {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    /* justify-self: flex-end; */
+}
+  
+.loginBox input[type="text"] {
+    margin-bottom: 30px;
+    padding: 8px;
+    /* border: 0.2px solid #ccc; */
+    border-radius: 8px;
+    outline-color: #051d41;
+    background-color: #f7f8fa;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.tekst {
+    font-size: 1.2vw;
+    text-align: left;
+    color: #051d41;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding-bottom: 5%;
+    align-self: flex-start;
+    padding-top: 5%;
+}
+
+@media (max-width: 768px) {
+    .container{
+        height: 130vh;
+    }
+
+    .loginBox {
+        height: 500px;
+        /* max-width: auto; */
+    }
+
+    .tekst {
+        font-size: 1rem;
+        padding-bottom: 8%;
+        max-width: 100%;
+        margin-right: 0; /* Dodao ovu liniju kako bi se uklonio margin-right na manjim ekranima */
+    }
+
+    .loginBox h2 {
+        font-size: 1.0rem;
+        padding-bottom: 8%;
+        /* width: auto; */
+        max-width: 100%;
+
+        text-align: left;
+        align-self: flex-start;
+        padding-top: 5%;
+        /* margin-bottom: 10px; */
+    }
+
+    .loginBox input[type="text"] {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/* 
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+ */
