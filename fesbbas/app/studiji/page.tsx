@@ -11,7 +11,8 @@ export default function Studiji() {
 
     const [search, setSearch] = React.useState("");
     const filtered = studiji.filter((studij) => studij.name.toLowerCase().includes(search.toLowerCase()));
-    const [selectedItem, setSelectedItem] = React.useState(null);
+    // const [selectedItem, setSelectedItem] = React.useState(null);
+    const [selectedItem, setSelectedItem] = React.useState<string | null>(null);
 
     return (
             <div className={`${styles.loginBox}`}>
