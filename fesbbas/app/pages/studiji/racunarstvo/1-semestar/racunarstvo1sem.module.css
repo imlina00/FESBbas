@@ -1,16 +1,14 @@
 
 .container {
-    height: 100vh; /*bitno*/
+    height: 100vh;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
-    /* max-width: 100%; */
+    max-width: 100%;
     background: #e7ecf4;
   }
 
   .loginBox {
-    /* display: flex;
-    flex-direction: row; */
     max-width: 2200px;
     width: 100%;
     text-align: left;
@@ -30,33 +28,7 @@
     margin-top: 23px;
 }
 
-.rectangle a:hover{
-        transform: scale(1.05); 
-        transition: transform 0.4s ease; 
-}
-
-.loginBox form {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-    padding-top: 17px;
-}
-
-.loginBox input[type="text"] {
-    margin-bottom: 30px;
-    padding: 8px;
-    border-radius: 8px;
-    outline-color: #051d41;
-    background-color: #f7f8fa;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-/* .text {
+.loginBox h2 {
     font-size: 1.2vw;
     text-align: left;
     color: #051d41;
@@ -65,16 +37,44 @@
     padding-bottom: 5%;
     align-self: flex-start;
     padding-top: 5%;
-    width: 100%;
-} */
+    margin-right: 50%;
+}
+  
+.loginBox form {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+  
+.loginBox input[type="text"] {
+    margin-bottom: 30px;
+    padding: 8px;
+    border-radius: 8px;
+    outline-color: #051d41;
+    background-color: #f7f8fa;
+}
 
-/* .rectangle kategorija {
-    color: red;
-} */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.tekst {
+    font-size: 1.2vw;
+    text-align: left;
+    color: #051d41;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding-bottom: 5%;
+    align-self: flex-start;
+    padding-top: 5%;
+}
 
 @media (max-width: 768px) {
     .container{
-        height: 170vh;
+        height: 130vh;
     }
 
     .loginBox {
@@ -98,12 +98,6 @@
     .container {
         flex-direction: column;
         align-items: center;
-        max-width: 100%;
-        height: 170vw;
-    }
-    .container p {
-        word-wrap: break-word;
-        max-width: 100%; /* Ensure the text doesn't overflow the container */
     }
 
 }

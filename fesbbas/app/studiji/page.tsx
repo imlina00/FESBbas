@@ -22,20 +22,21 @@ export default function Studiji() {
                     <div className='font-bold mt-3 pb-4 text-[19px] md:text-[22px] flex-shrink-0 text-left flex-wrap text-[#051d41]'>
                         <p>Pronađi svoj studij i klikom na ime odaberi željeni semestar iz padajućeg izbornika.</p>
                     </div>
+                    
             <div className='flex md:flex-row flex-col'>
                 {heroItems.map((item) => (
                 <div key={item.id} 
-                className=' w-full mx-12 md:mx-12'
+                className=' w-full mx-9 md:mx-9'
                 >
-                            <div className='pt-7'>
+                            <div className='pt-7 mr-[22%]'>
                                         <div className={styles.centeredImage}>
                                             <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                            <Image src={item.img} alt="Icon" width={130} height={130} />
+                                            <Image src={item.img} alt="Icon" width={120} height={120} />
                                             </a>
                                         </div>
                                 <p
                                 onClick={() => setSelectedItem(selectedItem === item.name ? null : item.name)}    
-                                className={`font-bold mb-2 mt-7 md:text-[20px] text-[18px] text-[#e09721] md:text-center text-center uppercase cursor-pointer ${selectedItem === item.name ? styles.selectedItem : ''}`}
+                                className={`font-bold md:mb-2 md:mt-7 mt-0 mb-1 md:text-[19.65px] text-[18px] text-[#e09721] md:text-center text-center uppercase cursor-pointer ${selectedItem === item.name ? styles.selectedItem : ''}`}
                                 >
                                 {item.name}
                                 </p>             

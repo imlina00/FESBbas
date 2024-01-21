@@ -1,47 +1,21 @@
 
-.container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: #e7ecf4;
-}
-
   .loginBox {
     display: flex;
     padding: 20px;
-    padding-bottom: 180px;
-    justify-content: space-between;
+    height: 120vh;
+    /* padding-bottom: 180px; */
+    /* justify-content: space-between; */
     align-items: flex-start;
     flex-direction: column;
     background: #e7ecf4;
+    width:max-content;
 }
 
-.loginBox form {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-}
-  
-.loginBox input[type="text"] {
-    margin-bottom: 30px;
-    padding: 8px;
-    border-radius: 8px;
-    outline-color: #051d41;
-    background-color: #f7f8fa;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-.icon {
+/* .icon {
     height: 10vw;
     width: 10vw;
     padding: 2.5vw;
-  }
+  } */
 
 .centeredImage {
     display: flex;
@@ -51,15 +25,15 @@
     border-radius: 50%;
     filter: drop-shadow(0px 4px 4px rgba(71, 71, 71, 0.3));
     background-color: #cedaeb; 
-    justify-items: center;
+    justify-items: start;
     align-self: center;
     padding: 23%;
   }
 
-  .centeredImage img {
+  /* .centeredImage img {
     max-width: 100%;
     max-height: 100%;
-  }
+  } */
  
   .centeredImage:hover {
     transform: scale(1.1); 
@@ -67,9 +41,31 @@
   }
 
 @media (max-width: 768px) {
-  
+
+  .loginBox {
+    height: 120vh;
+    width: 100%;
+  }
+
+    .loginBox p {
+      word-wrap: break-word;
+      max-width: 100%; /* Ensure the text doesn't overflow the container */
+  }
+
+  /* .centeredImage {
+    max-width: 50%; 
+    max-height: auto;
+    margin: 0 auto;
+    padding: 23%;
+} */
+
+  /* .centeredImage img {
+    max-width: 100%;
+    max-height: 100%;
+  } */
+
   .centeredImage {
-      padding: 10%;
-    }
+    display: none;
+  }
 
 }

@@ -3,6 +3,20 @@ import React from 'react';
 import pages from '@/app/enum/pages';
 
 export const Feed = () => {
+  
+  const sortedPages = pages.slice().sort((a, b) => {
+    const nameA = a.name.toLowerCase();
+    const nameB = b.name.toLowerCase();
+  
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
+  });
+
   return (
     <section className='bg-[#062757]'>
       <div className='p-4 md:p-20 md:pb-0 relative pb-0' id="korisne-stranice">
