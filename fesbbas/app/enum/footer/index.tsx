@@ -2,7 +2,7 @@ const footerItems = [
     {   
         id:1,
         name:'Kontakt',
-        link:'',
+        link:'/',
     },
     {   
         id:2,
@@ -16,7 +16,7 @@ const footerItems = [
     },
     {   
         id:4,
-        name:'Copyright @ 2023 FESB. All rights reserved.',
+        name:'Copyright @ 2023 FESB.',
         link:'',
     },
 

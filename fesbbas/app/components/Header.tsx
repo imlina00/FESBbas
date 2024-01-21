@@ -29,16 +29,16 @@ export const Header = () => {
                 <div className='items-center justify-end pt-8 px-4 hidden max-lg:block cursor-pointer'>
                     <FontAwesomeIcon icon={faBars} color={"#e09721"} onClick={() => (setShowMenu(!showMenu))} size='2x'/>
                     <>
-                        {showMenu && <div className='absolute top-15 mt-2 right-2 z-50 bg-[#051d41] rounded-xl p-4 ' style={{ opacity: 0.97 }}>
+                        {showMenu && <div className='absolute top-15 mt-4 right-1 z-50 bg-[#051d41] p-4 w-[100%]' >
                             {
                                 <>
                                     {sitemap.map((item) => (
-                                        <div className="py-1 pr-3 md:pr-6 md:mr-6" key={item.id}>
-                                            <Link className="font-regular text-[#e7ecf4]" href={item.link}>{item.name}</Link>
+                                        <div className="py-1  text-center" key={item.id}>
+                                            <Link className="font-regular text-[#e7ecf4] hover:text-[#c7861e] hover:font-semibold" href={item.link}>{item.name}</Link>
                                         </div>
 
                                     ))}
-                                    <div className="border-t pt-3 mt-3 flex justify-center text-[#e7ecf4] cursor-pointer" onClick={() => (setShowMenu(!showMenu))}><FontAwesomeIcon icon={faClose}/></div>
+                                    <div className="border-t pt-3 mt-3 flex justify-center text-[#e7ecf4] hover:text-[#c7861e] cursor-pointer" onClick={() => (setShowMenu(!showMenu))}><FontAwesomeIcon icon={faClose}/></div>
                                 </>
                             }
                         </div>}
